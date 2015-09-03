@@ -7,6 +7,7 @@ find_package(rmw REQUIRED)
 
 add_library(${PROJECT_NAME} SHARED src/rmw_impl1.c)
 ament_target_dependencies(${PROJECT_NAME} "rmw")
+add_definitions("-DRMW_BUILD_DLL")
 
 ament_export_dependencies(rmw)
 ament_export_libraries(${PROJECT_NAME})

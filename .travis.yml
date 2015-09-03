@@ -1,0 +1,12 @@
+sudo: true
+os:
+  - linux
+  - osx
+language: cpp
+install:
+  - make -f .Makefile install_deps
+script:
+  - make -f .Makefile
+  - . build/install/setup.bash
+  - ./build/install/bin/example__impl1
+  - ./build/install/bin/example__impl2

@@ -3,5 +3,6 @@
 int main()
 {
   rmw_t bar = rclcpp::bar();
-  return bar.data;
+  printf("Using impl: %d\n", bar.data);
+  return 0;
 }

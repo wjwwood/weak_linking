@@ -2,7 +2,7 @@
 	path = ament/ament_cmake
 	url = https://github.com/ament/ament_cmake.git
 [submodule "ament/ament_tools.git"]
-	path = ament/ament_tools.git
+	path = ament/ament_tools
 	url = https://github.com/ament/ament_tools.git
 [submodule "ament/ament_package"]
 	path = ament/ament_package

@@ -10,9 +10,18 @@
 # define RMW_PUBLIC
 #endif
 
+#if __cplusplus
+extern "C"
+{
+#endif
+
 typedef struct RMW_PUBLIC rmw_t
 {
   int data;
 } rmw_t;
 
 RMW_PUBLIC rmw_t foo();
+
+#if __cplusplus
+}
+#endif

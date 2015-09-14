@@ -18,8 +18,8 @@ else
 	sudo -H python3.4 get-pip.py
 	cmake --version
 endif
-	python3.4 --version
-	sudo -H python3.4 -m pip install empy
+	python3 --version
+	sudo -H python3 -m pip install empy
 
 install:
 	cd build && make install
@@ -31,7 +31,7 @@ weak_linking:
 	@mkdir -p build
 	cd build && touch AMENT_IGNORE
 	cd build && ln -s .. ./src
-	cd build && python3.4 -u ./src/ament/ament_tools/scripts/ament.py build --ament-cmake-args -DPYTHON_VERSION=3.4 --
+	cd build && python3 -u ./src/ament/ament_tools/scripts/ament.py build --ament-cmake-args -DPYTHON_VERSION=3 --
 
 .PHONY: clean
 clean:

@@ -8,5 +8,5 @@ install:
 script:
   - make -f .Makefile
   - . build/install/setup.bash
-  - ./build/install/bin/example__impl1
-  - ./build/install/bin/example__impl2
+  - ./build/install/bin/example__rmw_impl1
+  - ./build/install/bin/example__rmw_impl2

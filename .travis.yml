@@ -8,5 +8,5 @@ install:
 script:
   - make -f .Makefile
   - . build/install/setup.bash
-  - ./build/install/bin/example__rmw_impl1
-  - ./build/install/bin/example__rmw_impl2
+  - ./build/install/bin/example__rmw_impl1 | grep "Using impl: 1"
+  - ./build/install/bin/example__rmw_impl2 | grep "Using impl: 2"
